@@ -254,3 +254,18 @@ p {
 .company-logos img {
     padding: 0 18px;
 }
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-top: 1em;
+    font-size: 1em;
+    color: #009f4d;
+}
+
+.lb-data .lb-caption {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #fff;
+    font-weight: 600;
+}
