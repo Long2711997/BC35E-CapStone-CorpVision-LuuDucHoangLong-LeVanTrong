@@ -152,7 +152,15 @@ p {
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
 }
 
+.text-para {
+    margin-top: -10px;
+}
+
 .grids5-info:hover a.title {
+    color: #009f4d;
+}
+
+.grids5-info a.btn-style1:hover {
     color: #009f4d;
 }
 
@@ -164,4 +172,85 @@ p {
     transition: 0.3s ease-in;
     color: #3f3a64;
     border-radius: 8px;
+}
+
+/* GALLERY START  */
+.gallery {
+    background-color: #f7f7f7;
+}
+
+.gallery a.zoom {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery a.zoom img {
+    transition: 0.3s ease-in-out;
+}
+
+.gallery a:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.gallery .overlay__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 42, 55, 0.7);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.gallery a.zoom:hover .overlay__hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.gallery span.hover-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 46px 50px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.gallery a.zoom:hover .hover-content {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.gallery span.hover-content .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery span.hover-content .content {
+    font-size: 18px;
+    color: #eee;
+    display: block;
+}
+
+.company-logos {
+    border-top: 1px solid #eee;
+}
+
+.company-logos img {
+    padding: 0 18px;
 }
