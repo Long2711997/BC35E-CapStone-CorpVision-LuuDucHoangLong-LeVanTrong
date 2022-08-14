@@ -130,3 +130,38 @@ p {
     display: block;
     color: #3f3a64;
 }
+
+/* SERVICE START  */
+.service-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.blog-info a.title {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #3f3a64;
+    text-align: center;
+    background: #fff;
+    padding: 12px 35px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transform: translateY(-25px);
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+}
+
+.grids5-info:hover a.title {
+    color: #009f4d;
+}
+
+.btn-style1 {
+    padding: 8px 35px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    color: #3f3a64;
+    border-radius: 8px;
+}
