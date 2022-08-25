@@ -26,7 +26,8 @@ ul {
     list-style: disc;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0 0 1.5em 3em;
 }
 
@@ -398,6 +399,10 @@ header.nav-fixed {
     justify-content: space-between;
 }
 
+.navbar h1 {
+    margin: 0;
+}
+
 .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -524,20 +529,18 @@ header.nav-fixed {
     display: block;
 }
 
-#carouselID .carousel-item {
-    height: 100vh;
+.carousel-inner {
+    height: 100%;
 }
 
-#carouselID .carousel-item>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: opacity(60%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+.carousel-banner {
+    height: auto;
     position: relative;
+    overflow: hidden;
+
 }
+
+
 
 .carousel-blur {
     width: 100%;
@@ -545,12 +548,12 @@ header.nav-fixed {
     position: absolute;
     background-color: #213364;
     filter: opacity(50%);
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: 0;
 }
 
-#carouselID .carousel-caption {
+.carousel-caption {
     text-align: left;
     left: 50%;
     top: 50%;
@@ -565,18 +568,73 @@ header.nav-fixed {
     font-weight: 600;
 }
 
-.carousel-caption p {
+.carousel-item .carousel-caption p {
     font-size: 20px;
     line-height: 30px;
     max-width: 600px;
     letter-spacing: 0.010em;
     opacity: .9;
+    color: white;
 }
 
 .carousel-caption button {
     font-size: 20px;
     padding: 10px 50px;
     border-radius: 10px;
+}
+
+.carousel-inner .slick-arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 50px;
+    font-size: 0;
+    background: var(--bg-color);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 12;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+    border: 1px solid var(--border-color);
+}
+
+
+.carousel-inner .slick-arrow.slick-prev {
+    right: 95px;
+}
+
+.carousel-inner .slick-arrow.slick-next {
+    right: 25px;
+}
+
+.carousel-inner .slick-arrow:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-align: center;
+    line-height: 46px;
+    color: var(--heading-color);
+}
+
+.shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.shape svg {
+    width: 100%;
+}
+
+.shape path {
+    fill: var(--bg-color);
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 /* ABOUT START  */
@@ -859,7 +917,8 @@ header.nav-fixed {
     max-width: 50%;
 }
 
-.mt-lg-0, .my-lg-0 {
+.mt-lg-0,
+.my-lg-0 {
     margin-top: 0 !important;
 }
 
@@ -1012,7 +1071,7 @@ header.nav-fixed {
     background: var(--bg-lightgrey);
 }
 
-.feedback-item{
+.feedback-item {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
@@ -1112,7 +1171,8 @@ header.nav-fixed {
 }
 
 .card:hover {
-    cursor: pointer; ;
+    cursor: pointer;
+    ;
 }
 
 a.zoom {
@@ -1142,7 +1202,8 @@ a.zoom {
     margin-bottom: 0;
 }
 
-.price-review p a, .price-review p {
+.price-review p a,
+.price-review p {
     font-weight: 400;
     font-size: 17px;
     color: #999;
@@ -1276,24 +1337,24 @@ form.contact-form {
     font-size: 16px;
 }
 
-footer{
+footer {
     background: #151421;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
 
-footer a:hover{
+footer a:hover {
     color: #fff;
 }
 
-.footer-logo a{
+.footer-logo a {
     text-decoration: none;
 }
 
-.footer-logo:hover a{
+.footer-logo:hover a {
     color: #fff;
 }
 
-footer .row .col-lg-4 p{
+footer .row .col-lg-4 p {
     font-size: 18px;
     line-height: 28px;
     color: #97a1a9;
@@ -1335,7 +1396,7 @@ footer .row .col-lg-4 p{
     opacity: 1;
 }
 
-.widget_categories ul{
+.widget_categories ul {
     margin-left: 0;
 }
 
@@ -1351,11 +1412,11 @@ footer .row .col-lg-4 p{
     transition: all .3s;
 }
 
-.widget_categories li:hover a{
+.widget_categories li:hover a {
     color: #fff;
 }
 
-.widget_meta ul{
+.widget_meta ul {
     margin-left: 0;
 }
 
@@ -1397,7 +1458,7 @@ footer .row .col-lg-4 p{
     color: #fff;
 }
 
-.back-to-top{
+.back-to-top {
     display: none;
     position: fixed;
     bottom: 20px;
