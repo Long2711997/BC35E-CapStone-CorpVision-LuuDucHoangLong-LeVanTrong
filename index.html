@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="search-active">
     <header id="site-header" class="fixed-top main-header nav-fixed">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark stroke">
@@ -800,6 +800,17 @@
                     $("header").removeClass("active");
                 }
             });
+        });
+    </script>
+    <!-- Search -->
+    <script wfd-invisible="true">
+        $('.control').click(function () {
+            $('body').addClass('search-active');
+            $('.input-search').focus();
+        });
+
+        $('.icon-close').click(function () {
+            $('body').removeClass('search-active');
         });
     </script>
     <!-- Slick -->
