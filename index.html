@@ -813,6 +813,28 @@
             $('body').removeClass('search-active');
         });
     </script>
+    <!-- Dark Theme -->
+    <script>
+        $('.gg-moon').click(function () {
+            $('.about').addClass('dark-theme-soft');
+            $('.challenges').addClass('dark-theme-hard');
+            $('.service').addClass('dark-theme-soft');
+            $('.gallery').addClass('dark-theme-hard');
+            $('.success').addClass('dark-theme-soft');
+            $('.feedback').addClass('dark-theme-hard');
+            $('.news').addClass('dark-theme-soft');
+            });
+        
+        $('.gg-sun').click(function () {
+                $('.about').removeClass('dark-theme-soft');
+                $('.challenges').removeClass('dark-theme-hard');
+                $('.service').removeClass('dark-theme-soft');
+                $('.gallery').removeClass('dark-theme-hard');
+                $('.success').removeClass('dark-theme-soft');
+                $('.feedback').removeClass('dark-theme-hard');
+                $('.news').removeClass('dark-theme-soft');
+            });
+    </script>
     <!-- Slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
