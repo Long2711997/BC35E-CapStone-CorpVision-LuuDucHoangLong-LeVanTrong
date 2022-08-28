@@ -646,7 +646,6 @@ body.search-active .control .icon-material-search {
 }
 
 /*-- //toggle switch --*/
-/*-- dark and light mode styling --*/
 .mode-container {
     width: 24px;
     height: 24px;
@@ -752,16 +751,15 @@ input:checked+.mode-container i.gg-moon {
     display: none;
 }
 
+/* CAROUSEL */
 .carousel-inner {
     height: 100vh;
 }
-
 
 .carousel-banner {
     height: auto;
     position: relative;
     overflow: hidden;
-
 }
 
 .carousel-blur {
@@ -818,8 +816,8 @@ input:checked+.mode-container i.gg-moon {
     font-size: 30px;
     background: var(--bg-color);
     border: 0;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     z-index: 12;
     outline: none;
     cursor: pointer;
@@ -831,8 +829,10 @@ input:checked+.mode-container i.gg-moon {
 .slick-slider .slick-arrow:before {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 30px;
-    text-align: center;
-    line-height: 46px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    line-height: 30px;
     color: var(--heading-color);
 }
 
@@ -1537,6 +1537,7 @@ span.meta-value {
     color: var(--primary-color);
 }
 
+/* Contact */
 .contact {
     background-image: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/map.png);
     background-color: #151421;
@@ -1738,4 +1739,20 @@ footer .row .col-lg-4 p {
     border-radius: 35px;
     transition: 0.3s ease-out;
     z-index: 9999;
+}
+
+.dark-theme-soft {
+    background-color: #151421;
+}
+
+.dark-theme-soft h3, .dark-theme-soft a, .dark-theme-soft.service-list li a{
+    color: #fff;
+}
+
+.dark-theme-hard{
+    background-color: #100f19;
+}
+
+.dark-theme-hard h3, .dark-theme-hard a{
+    color: #fff;
 }
