@@ -183,6 +183,7 @@ h4,
 h5,
 h6 {
     clear: both;
+    color: var(--heading-color);
 }
 
 
@@ -364,7 +365,7 @@ textarea {
 header.main-header {
     padding: 0px;
     transition: all 0.4s ease 0s;
-    height: 100px;
+    /* height: 100px; */
     display: grid;
     align-items: center;
     z-index: 10;
@@ -374,7 +375,7 @@ header.main-header {
 header.nav-fixed {
     padding: 0px;
     background-color: var(--bg-color);
-    height: 90px;
+    /* height: 90px; */
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
     z-index: 999;
@@ -428,7 +429,7 @@ header.nav-fixed {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     transition: all 0.5s ease;
-    padding: 14px 0 10px;
+    /* padding: 14px 0 10px; */
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -545,7 +546,7 @@ body.search-active .control .icon-material-search {
     width: 100%;
 }
 
-.search-input input::placeholder{
+.search-input input::placeholder {
     color: #fff;
 }
 
@@ -797,6 +798,7 @@ input:checked+.mode-container i.gg-moon {
     color: white;
 }
 
+
 .carousel-caption button {
     font-size: 20px;
     padding: 10px 50px;
@@ -925,7 +927,7 @@ svg {
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
-    color: #3f3a64;
+    color: var(--heading-color);
     position: relative;
 }
 
@@ -975,7 +977,7 @@ svg {
     border-radius: 8px;
     text-align: center;
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     transition: .3s ease;
 }
 
@@ -991,7 +993,7 @@ svg {
     font-weight: 600;
     margin-top: 25px;
     display: block;
-    color: #3f3a64;
+    color: var(--heading-color);
 }
 
 /* SERVICE START  */
@@ -1004,13 +1006,13 @@ svg {
     font-size: 19px;
     line-height: 28px;
     font-weight: 600;
-    color: #3f3a64;
+    color: var(--heading-color);
     text-align: center;
-    background: #fff;
+    background: var(--bg-color);
     padding: 12px 35px;
     display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
     transform: translateY(-25px);
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
 }
@@ -1111,7 +1113,7 @@ svg {
 }
 
 .company-logos {
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color-light);
 }
 
 .company-logos img {
@@ -1397,7 +1399,6 @@ svg {
     margin: 0;
     font-weight: 600;
     font-size: 20px;
-    color: var(--secondary-color);
 }
 
 .people p.indentity {
@@ -1745,14 +1746,33 @@ footer .row .col-lg-4 p {
     background-color: #151421;
 }
 
-.dark-theme-soft h3, .dark-theme-soft a, .dark-theme-soft.service-list li a{
+.dark-theme-soft h3,
+.dark-theme-soft a,
+.dark-theme-soft.service-list li a {
     color: #fff;
 }
 
-.dark-theme-hard{
+.dark-theme-hard {
     background-color: #100f19;
 }
 
-.dark-theme-hard h3, .dark-theme-hard a{
+.dark-theme-hard h3,
+.dark-theme-hard a {
     color: #fff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #009f4d;
+    --secondary-color: #213364;
+    --font-color: #c2c2c2;
+    --bg-color: #151421;
+    --heading-color: #eee;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-color-light: rgba(255, 255, 255, 0.1);
+    --nav-color: #fff;
+    --dropdown-color: #121725;
+    --iframe-filter: grayscale(100%);
+    --bg-grey: #100f19;
+    --bg-lightgrey: #100f19;
+    --layer: rgba(29, 42, 55, 0.8);
 }
