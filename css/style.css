@@ -787,6 +787,7 @@ input:checked+.mode-container i.gg-moon {
     margin-bottom: 18px;
     max-width: 800px;
     font-weight: 600;
+    color: #fff;
 }
 
 .carousel-item .carousel-caption p {
@@ -815,7 +816,7 @@ input:checked+.mode-container i.gg-moon {
 
 .slick-slider .slick-arrow {
     position: absolute !important;
-    font-size: 30px;
+    /* font-size: 30px; */
     background: var(--bg-color);
     border: 0;
     width: 45px;
@@ -830,31 +831,31 @@ input:checked+.mode-container i.gg-moon {
 
 .slick-slider .slick-arrow:before {
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: 30px;
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
+    /* font-size: 30px; */
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
     line-height: 30px;
     color: var(--heading-color);
 }
 
 .slick-slider .slick-arrow.slick-prev {
-    top: 95%;
-    left: 85%;
+    top: 91%;
+    left: 89%;
 }
 
-.slick-slider .slick-arrow.slick-prev:before {
+/* .slick-slider .slick-arrow.slick-prev:before {
     content: "\f060";
-}
+} */
 
 .slick-slider .slick-arrow.slick-next {
-    top: 95%;
-    right: 5%;
+    top: 91%;
+    right: 3%;
 }
 
-.slick-slider .slick-arrow.slick-next:before {
+/* .slick-slider .slick-arrow.slick-next:before {
     content: "\f061";
-}
+} */
 
 @media (max-width: 480px) {
     .hero-content h1 {
